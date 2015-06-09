@@ -1,0 +1,7 @@
+<div class="navbar" ng-controller="navbarController as vm">
+    <ul class="nav">
+        <li ng-repeat="route in vm.routes">
+            <a ng-href="{{'#'+route.url}}">{{route.routeAlias}}</a>
+        </li>
+    </ul>
+</div>

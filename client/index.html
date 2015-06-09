@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="estudio39">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/docs/assets/css/bootstrap.css"/>
+</head>
+<body>
+
+<div ng-include="'app/components/navigation/navbar.html'"></div>
+<div class="container">
+    <div class="well" ui-view></div>
+</div>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="app/app.js"></script>
+<script src="app/components/navigation/navigation.js"></script>
+<script src="app/components/navigation/navigation.controller.js"></script>
+<script src="app/home/home.js"></script>
+<script src="app/activities/activities.js"></script>
+<script src="app/activities/activities.service.js"></script>
+<script src="app/activities/activities.controller.js"></script>
+</body>
+</html>
