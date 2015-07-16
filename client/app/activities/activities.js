@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  angular.module('activities', ['ui.router'])
+  angular.module('activities', ['ui.router', 'ui.ace'])
     .config(activitiesConfig);
 
   activitiesConfig.$inject = ['$stateProvider'];

@@ -5,3 +5,18 @@
         </li>
     </ul>
 </div>
+<br/>
+
+<div ui-ace="{
+  useWrapMode : true,
+  showGutter: true,
+  theme:'monokai',
+  mode: 'javascript',
+  firstLineNumber: 1,
+  onLoad: aceLoaded,
+  onChange: aceChanged
+}" ng-model="vm.chabon"></div>
+
+    <button ng-click="vm.evalEditor(vm.chabon)">chabon</button>
+    <button ng-click="vm.executeCode()">nose</button>
+    {{vm.chabon}}
