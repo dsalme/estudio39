@@ -3,14 +3,9 @@
   angular.module('activities')
     .controller('activitiesController', ActivitiesController);
 
-  ActivitiesController.$inject = ['activitiesFactory', 'activities', '$scope'];
-  function ActivitiesController(activitiesFactory, activities, $scope) {
+  ActivitiesController.$inject = ['activitiesFactory', 'activities'];
+  function ActivitiesController(activitiesFactory, activities) {
     var vm = this;
     vm.activities = activities;
-    vm.evalEditor = evalEditor;
-    vm.executeCode = $scope.executeCode;
-
-    function evalEditor(string){
-    }
   }
-}());
+})();
